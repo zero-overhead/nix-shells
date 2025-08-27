@@ -36,6 +36,7 @@ stdenvNoCC.mkDerivation (finalAttrs: rec {
                 pip
                 plotly
                 prettytable
+                pycryptodome
                 pylint
                 pygame-ce
                 pgzero
