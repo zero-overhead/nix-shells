@@ -12,6 +12,7 @@ let
         pedal = pyfinal.callPackage ./pedal.nix { };
         pgzero = pyfinal.callPackage ./pgzero.nix { };
         jturtle = pyfinal.callPackage ./jturtle.nix { };
+        jupyterlab-language-pack-de-DE = pyfinal.callPackage ./jupyterlab-language-pack-de-DE.nix { };
       };
     };
 in with pkgs;
@@ -23,6 +24,7 @@ stdenvNoCC.mkDerivation (finalAttrs: rec {
                 jupyterlab
                 jupytext
                 jupyterlab-lsp
+                jupyterlab-language-pack-de-DE
                 jedi-language-server
                 jturtle
                 keyboard
