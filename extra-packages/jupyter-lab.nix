@@ -35,6 +35,7 @@ stdenvNoCC.mkDerivation (finalAttrs: rec {
                 numpy
                 pandas
                 pedal
+                pillow
                 pip
                 plotly
                 prettytable
