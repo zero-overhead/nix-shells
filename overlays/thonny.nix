@@ -20,9 +20,11 @@ in
       numpy
       pandas
       pedal
+      pillow
       pip
       plotly
       prettytable
+      pycryptodome
       pylint
       pygame-ce
       pgzero
