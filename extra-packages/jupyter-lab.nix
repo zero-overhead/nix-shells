@@ -21,8 +21,17 @@ stdenvNoCC.mkDerivation (finalAttrs: rec {
     nativeBuildInputs = [
              (python.withPackages(ps: with ps; [
                 bokeh # interactive plots
+                bokeh-sampledata
                 distutils
                 ipympl # jupyter lab matplotlib extension
+                ipywidgets
+                ipydatawidgets
+                ipywebrtc
+                pythreejs
+                ipyvolume
+                jupyterlab-git
+                jupyterlab-latex
+                ipyleaflet
                 jupyterlab
                 jupytext
                 jupyterlab-lsp
