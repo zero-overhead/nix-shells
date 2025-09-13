@@ -20,7 +20,9 @@ stdenvNoCC.mkDerivation (finalAttrs: rec {
     inherit pname version;
     nativeBuildInputs = [
              (python.withPackages(ps: with ps; [
+                bokeh # interactive plots
                 distutils
+                ipympl # jupyter lab matplotlib extension
                 jupyterlab
                 jupytext
                 jupyterlab-lsp
