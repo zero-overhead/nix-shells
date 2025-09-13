@@ -23,6 +23,7 @@ stdenvNoCC.mkDerivation (finalAttrs: rec {
                 bokeh # interactive plots
                 bokeh-sampledata
                 distutils
+                ipython
                 ipympl # jupyter lab matplotlib extension
                 ipywidgets
                 ipydatawidgets
