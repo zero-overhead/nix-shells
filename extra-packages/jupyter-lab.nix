@@ -29,12 +29,13 @@ stdenvNoCC.mkDerivation (finalAttrs: rec {
                 ipympl # jupyter lab matplotlib extension
                 ipywidgets
                 ipydatawidgets
-                jupyterlab-git
+                jupyter-book
                 jupyterlab
-                jupytext
+                jupyterlab-git
                 jupyterlab-lsp
                 jupyterlab-widgets
                 #jupyterlab-language-pack-de-DE
+                jupytext
                 jedi-language-server
                 jturtle
                 keyboard
