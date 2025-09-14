@@ -15,8 +15,12 @@ in
     echo
     echo Run e.g.
     echo jupyter --paths
+    echo jupyter labextension list
+    echo
     echo jupyter-lab --notebook-dir=\$HOME/Dokumente
-    echo or even as desktop starter
+    echo
+    echo or as desktop starter:
+    echo
     echo nix-shell path/to/jupyter-lab.nix --run \"jupyter-lab --notebook-dir=\$HOME/Dokumente\"
     '';
 }
