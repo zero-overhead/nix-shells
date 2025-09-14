@@ -19,6 +19,8 @@ in with pkgs;
 stdenvNoCC.mkDerivation (finalAttrs: rec {
     inherit pname version;
     nativeBuildInputs = [
+              git
+              nodejs
              (python.withPackages(ps: with ps; [
                 bokeh # interactive plots
                 bokeh-sampledata
