@@ -21,6 +21,11 @@ stdenvNoCC.mkDerivation (finalAttrs: rec {
     nativeBuildInputs = [
               git
               nodejs
+              texliveFull
+			  pandoc
+			  imagemagick
+			  gnuplot
+			  ffmpeg
              (python.withPackages(ps: with ps; [
                 bokeh # interactive plots
                 bokeh-sampledata
