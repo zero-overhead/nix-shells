@@ -44,11 +44,13 @@ stdenvNoCC.mkDerivation (finalAttrs: rec {
                 jedi-language-server
                 jturtle
                 keyboard
+                litellm
                 matplotlib
                 mariadb
                 metakernel
                 mysql-connector
                 numpy
+                ollama
                 pandas
                 pedal
                 pillow
