@@ -40,7 +40,7 @@ stdenvNoCC.mkDerivation (finalAttrs: rec {
                 jupyterlab
                 jupyterlab-git
                 jupyterlab-lsp
-                jupyterlab-rise
+                #jupyterlab-rise
                 jupyterlab-widgets
                 #jupyterlab-language-pack-de-DE
                 jupytext
