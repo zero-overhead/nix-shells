@@ -2,8 +2,14 @@
   #lib,
   buildPythonPackage,
   fetchPypi,
-  #setuptools,
-  #wheel,
+  setuptools,
+  build,
+  wheel,
+  hatchling,
+  hatch-nodejs-version,
+  hatch-jupyter-builder,
+  jupyterlab,
+  jupyterlab-mathjax3
 }:
 
 buildPythonPackage rec {
@@ -19,9 +25,15 @@ buildPythonPackage rec {
   doCheck = false;
 
   # specific to buildPythonPackage, see its reference
-  #pyproject = true;
-  #build-system = [
-  #  setuptools
-  #  wheel
-  #];
+  pyproject = true;
+  build-system = [
+    build
+    setuptools
+    wheel
+    hatchling
+    hatch-nodejs-version
+    hatch-jupyter-builder
+    jupyterlab
+    jupyterlab-mathjax3
+  ];
 }
