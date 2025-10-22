@@ -12,6 +12,7 @@ let
         pedal = pyfinal.callPackage ./pedal.nix { };
         pgzero = pyfinal.callPackage ./pgzero.nix { };
         jturtle = pyfinal.callPackage ./jturtle.nix { };
+        jupyterlab-rise = pyfinal.callPackage ./jupyterlab-rise.nix { };
         #jupyterlab-language-pack-de-DE = pyfinal.callPackage ./jupyterlab-language-pack-de-DE.nix { };
       };
     };
@@ -39,6 +40,7 @@ stdenvNoCC.mkDerivation (finalAttrs: rec {
                 jupyterlab
                 jupyterlab-git
                 jupyterlab-lsp
+                jupyterlab-rise
                 jupyterlab-widgets
                 #jupyterlab-language-pack-de-DE
                 jupytext
