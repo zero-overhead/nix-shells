@@ -16,6 +16,7 @@ in
     echo Run e.g.
     echo jupyter --paths
     echo jupyter labextension list
+    echo jupyter server extension list
     echo
     echo jupyter-lab --notebook-dir=\$HOME/Dokumente
     echo
