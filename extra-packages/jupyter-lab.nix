@@ -17,18 +17,18 @@ let
         #jupyterlab-language-pack-de-DE = pyfinal.callPackage ./jupyterlab-language-pack-de-DE.nix { };
       };
     };
-#Jupyter-PDF-Export:
+# manually export Jupyter ot PDF that has svg included:
 # FILENAME=Pandas-Tutorial
-# jupyter nbconvert $FILENAME.ipynb --to latex
-# "\usepackage{svg}" to head of resulting $FILENAME.tex
-# xelatex --shell-escape $FILENAME.tex # runs inkscape to convert svg to pdf
+# jupyter nbconvert $FILENAME.ipynb --to latex # create latex file
+# sed -i '1 s/.*/&\\usepackage{svg}/' $FILENAME.tex # add svg package to end of first line of latex file
+# xelatex  --quiet --shell-escape $FILENAME.tex # xelatex runs inkscape to convert all svg to pdf
 in with pkgs;
 stdenvNoCC.mkDerivation (finalAttrs: rec {
     inherit pname version;
     nativeBuildInputs = [
-              git
-              nodejs
-              texliveFull
+        git
+        nodejs
+        texliveFull
 			  pandoc
 			  imagemagick
 			  inkscape
