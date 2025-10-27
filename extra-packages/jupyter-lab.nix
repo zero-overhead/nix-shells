@@ -17,6 +17,11 @@ let
         #jupyterlab-language-pack-de-DE = pyfinal.callPackage ./jupyterlab-language-pack-de-DE.nix { };
       };
     };
+#Jupyter-PDF-Export:
+# FILENAME=Pandas-Tutorial
+# jupyter nbconvert $FILENAME.ipynb --to latex
+# "\usepackage{svg}" to head of resulting $FILENAME.tex
+# xelatex --shell-escape $FILENAME.tex # runs inkscape to convert svg to pdf
 in with pkgs;
 stdenvNoCC.mkDerivation (finalAttrs: rec {
     inherit pname version;
@@ -26,6 +31,7 @@ stdenvNoCC.mkDerivation (finalAttrs: rec {
               texliveFull
 			  pandoc
 			  imagemagick
+			  inkscape
 			  gnuplot
 			  ffmpeg
              (python.withPackages(ps: with ps; [
