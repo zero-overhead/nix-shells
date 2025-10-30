@@ -7,6 +7,15 @@ let
     pgzero = prev.callPackage ../extra-packages/pgzero.nix {
       buildPythonPackage = prev.python3Packages.buildPythonPackage;
     };
+    jturtle = prev.callPackage ../extra-packages/jturtle.nix {
+      buildPythonPackage = prev.python3Packages.buildPythonPackage;
+    };
+    jupyterlab-rise = prev.callPackage ../extra-packages/jupyterlab-rise.nix {
+      buildPythonPackage = prev.python3Packages.buildPythonPackage;
+    };
+    jupyterlab-mathjax3 = prev.callPackage ../extra-packages/jupyterlab-mathjax3.nix {
+      buildPythonPackage = prev.python3Packages.buildPythonPackage;
+    };
 in
 {
   thonny = prev.thonny.overridePythonAttrs (old: {
