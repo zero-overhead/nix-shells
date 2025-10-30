@@ -40,10 +40,13 @@ stdenvNoCC.mkDerivation (finalAttrs: rec {
                 bokeh-sampledata
                 distutils
                 hf-xet
-                ipython
-                ipympl # jupyter lab matplotlib extension
-                ipywidgets
                 ipydatawidgets
+                ipykernel
+                ipympl # jupyter lab matplotlib extension
+                ipython
+                ipywidgets
+                jedi-language-server
+                jturtle
                 jupyter-book
                 jupyterlab
                 jupyterlab-git
@@ -52,12 +55,10 @@ stdenvNoCC.mkDerivation (finalAttrs: rec {
                 jupyterlab-widgets
                 #jupyterlab-language-pack-de-DE
                 jupytext
-                jedi-language-server
-                jturtle
                 keyboard
                 litellm
-                matplotlib
                 mariadb
+                matplotlib
                 metakernel
                 mysql-connector
                 numpy
@@ -65,17 +66,17 @@ stdenvNoCC.mkDerivation (finalAttrs: rec {
                 ollama
                 pandas
                 pedal
+                pgzero
                 pillow
                 pip
                 plotly
                 prettytable
-                python-gnupg
                 pycryptodome
-                pylint
                 pygame-ce
+                pylint
                 pytest
                 pytest-cov
-                pgzero
+                python-gnupg
                 requests
                 scikit-image
                 scikit-learn
@@ -85,10 +86,10 @@ stdenvNoCC.mkDerivation (finalAttrs: rec {
                 tabulate
                 tkinter
                 torch
-                torchvision
                 torchaudio
-                wheel
+                torchvision
                 tqdm
+                wheel
                 ]))
     ];
 
