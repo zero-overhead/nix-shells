@@ -11,27 +11,60 @@ in
 {
   thonny = prev.thonny.overridePythonAttrs (old: {
     dependencies = with prev.python3.pkgs; (old.dependencies or []) ++ [
+      autograd
+      bokeh
+      bokeh-sampledata
       distutils
-      setuptools
+      hf-xet
+      ipydatawidgets
+      ipykernel
+      ipympl
+      ipython
+      ipywidgets
+      jedi-language-server
+      jturtle
+      jupyter-book
+      jupyterlab
+      jupyterlab-git
+      jupyterlab-lsp
+      jupyterlab-rise
+      jupyterlab-widgets
+      jupytext
       keyboard
-      matplotlib
+      litellm
       mariadb
+      matplotlib
+      metakernel
       mysql-connector
       numpy
+      numpy-stl
+      ollama
       pandas
       pedal
+      pgzero
       pillow
       pip
       plotly
       prettytable
       pycryptodome
-      pylint
       pygame-ce
-      pgzero
+      pylint
+      pytest
+      pytest-cov
+      python-gnupg
       requests
+      scikit-image
+      scikit-learn
+      scipy
       seaborn
+      setuptools
+      shapely
       tabulate
       tkinter
+      torch
+      torchaudio
+      torchvision
+      tqdm
       wheel
     ];
   });

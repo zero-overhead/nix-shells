@@ -82,6 +82,7 @@ stdenvNoCC.mkDerivation (finalAttrs: rec {
                 scikit-learn
                 scipy
                 seaborn
+                setuptools
                 shapely
                 tabulate
                 tkinter
