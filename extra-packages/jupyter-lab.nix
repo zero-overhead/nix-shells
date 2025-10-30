@@ -35,6 +35,7 @@ stdenvNoCC.mkDerivation (finalAttrs: rec {
 			  gnuplot
 			  ffmpeg
              (python.withPackages(ps: with ps; [
+                autograd
                 bokeh # interactive plots
                 bokeh-sampledata
                 distutils
@@ -60,6 +61,7 @@ stdenvNoCC.mkDerivation (finalAttrs: rec {
                 metakernel
                 mysql-connector
                 numpy
+                numpy-stl
                 ollama
                 pandas
                 pedal
@@ -67,27 +69,26 @@ stdenvNoCC.mkDerivation (finalAttrs: rec {
                 pip
                 plotly
                 prettytable
+                python-gnupg
                 pycryptodome
                 pylint
                 pygame-ce
+                pytest
+                pytest-cov
                 pgzero
                 requests
+                scikit-image
+                scikit-learn
+                scipy
                 seaborn
+                shapely
                 tabulate
                 tkinter
+                torch
+                torchvision
+                torchaudio
                 wheel
-            #      scikit-image
-            #      scikit-learn
-            #      scipy
-            #      pytest
-            #      pytest-cov
-            #      torch
-            #      torchvision
-            #      torchaudio
-            #      autograd
-            #      tqdm
-            #      pycryptodome
-            #      python-gnupg
+                tqdm
                 ]))
     ];
 
