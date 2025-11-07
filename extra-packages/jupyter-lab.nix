@@ -14,6 +14,7 @@ let
         jturtle = pyfinal.callPackage ./jturtle.nix { };
         jupyterlab-rise = pyfinal.callPackage ./jupyterlab-rise.nix { };
         jupyterlab-mathjax3 = pyfinal.callPackage ./jupyterlab-mathjax3.nix { };
+        jupyterlab-quarto = pyfinal.callPackage ./jupyterlab-quarto.nix { };
         #jupyterlab-language-pack-de-DE = pyfinal.callPackage ./jupyterlab-language-pack-de-DE.nix { };
       };
     };
@@ -34,6 +35,7 @@ stdenvNoCC.mkDerivation (finalAttrs: rec {
 			  inkscape
 			  gnuplot
 			  ffmpeg
+        quarto
              (python.withPackages(ps: with ps; [
                 autograd
                 bokeh # interactive plots
@@ -51,6 +53,7 @@ stdenvNoCC.mkDerivation (finalAttrs: rec {
                 jupyterlab
                 jupyterlab-git
                 jupyterlab-lsp
+                #jupyterlab-quarto
                 jupyterlab-rise
                 jupyterlab-widgets
                 #jupyterlab-language-pack-de-DE
