@@ -67,6 +67,7 @@ stdenvNoCC.mkDerivation (finalAttrs: rec {
                 numpy
                 numpy-stl
                 ollama
+                openpyxl
                 pandas
                 pedal
                 pgzero

@@ -23,6 +23,7 @@ metakernel
 mysql-connector
 numpy
 ollama
+openpyxl
 pandas
 pedal
 pillow
