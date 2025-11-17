@@ -60,6 +60,11 @@ stdenvNoCC.mkDerivation (finalAttrs: rec {
                 jupytext
                 keyboard
                 litellm
+                llm
+                llm-anthropic
+                llm-ollama
+                llm-openai-plugin
+                llm-gemini
                 mariadb
                 matplotlib
                 metakernel
@@ -67,6 +72,7 @@ stdenvNoCC.mkDerivation (finalAttrs: rec {
                 numpy
                 numpy-stl
                 ollama
+                openai
                 openpyxl
                 pandas
                 pedal
