@@ -18,6 +18,11 @@ in
       hf-xet
       keyboard
       litellm
+      llm
+      llm-anthropic
+      llm-ollama
+      llm-openai-plugin
+      llm-gemini
       mariadb
       matplotlib
       metakernel
@@ -25,6 +30,7 @@ in
       numpy
       numpy-stl
       ollama
+      openai
       openpyxl
       pandas
       pedal
