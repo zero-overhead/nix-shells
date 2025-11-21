@@ -41,6 +41,8 @@ stdenvNoCC.mkDerivation (finalAttrs: rec {
                 bokeh # interactive plots
                 bokeh-sampledata
                 distutils
+                folium
+                geopandas
                 hf-xet
                 ipydatawidgets
                 ipykernel
