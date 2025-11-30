@@ -15,6 +15,7 @@ let
         jupyterlab-rise = pyfinal.callPackage ./jupyterlab-rise.nix { };
         jupyterlab-mathjax3 = pyfinal.callPackage ./jupyterlab-mathjax3.nix { };
         jupyterlab-quarto = pyfinal.callPackage ./jupyterlab-quarto.nix { };
+        itables = pyfinal.callPackage ./itables.nix { };
         #jupyterlab-language-pack-de-DE = pyfinal.callPackage ./jupyterlab-language-pack-de-DE.nix { };
       };
     };
@@ -30,11 +31,11 @@ stdenvNoCC.mkDerivation (finalAttrs: rec {
         git
         nodejs
         texliveFull
-			  pandoc
-			  imagemagick
-			  inkscape
-			  gnuplot
-			  ffmpeg
+	    pandoc
+	    imagemagick
+	    inkscape
+	    gnuplot
+	    ffmpeg
         quarto
              (python.withPackages(ps: with ps; [
                 autograd
@@ -49,6 +50,7 @@ stdenvNoCC.mkDerivation (finalAttrs: rec {
                 ipympl # jupyter lab matplotlib extension
                 ipython
                 ipywidgets
+                itables
                 jedi-language-server
                 jturtle
                 jupyter-book
