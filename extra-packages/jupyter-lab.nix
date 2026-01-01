@@ -79,8 +79,8 @@ stdenvNoCC.mkDerivation (finalAttrs: rec {
                 openai
                 openpyxl
                 pandas
-                pedal
-                pgzero
+                #pedal
+                #pgzero
                 pillow
                 pip
                 plotly
