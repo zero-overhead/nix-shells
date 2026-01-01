@@ -31,11 +31,11 @@ stdenvNoCC.mkDerivation (finalAttrs: rec {
         git
         nodejs
         texliveFull
-	    pandoc
-	    imagemagick
-	    inkscape
-	    gnuplot
-	    ffmpeg
+	      pandoc
+	      imagemagick
+	      inkscape
+	      gnuplot
+	      ffmpeg
         quarto
              (python.withPackages(ps: with ps; [
                 autograd
