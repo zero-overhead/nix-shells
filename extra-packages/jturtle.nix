@@ -20,7 +20,7 @@ buildPythonPackage rec {
   doCheck = false;
 
   # specific to buildPythonPackage, see its reference
-  #pyproject = true;
+  pyproject = true;
   build-system = [
     setuptools
     wheel

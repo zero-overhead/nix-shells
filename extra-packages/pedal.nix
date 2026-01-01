@@ -1,9 +1,9 @@
 {
-  #lib,
+  lib,
   buildPythonPackage,
   fetchPypi,
-  #setuptools,
-  #wheel,
+  setuptools,
+  wheel
 }:
 
 buildPythonPackage rec {
@@ -19,9 +19,9 @@ buildPythonPackage rec {
   doCheck = false;
 
   # specific to buildPythonPackage, see its reference
-  #pyproject = true;
-  #build-system = [
-  #  setuptools
-  #  wheel
-  #];
+  pyproject = true;
+  build-system = [
+    setuptools
+    wheel
+  ];
 }
