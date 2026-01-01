@@ -12,9 +12,9 @@ let
         pedal = pyfinal.callPackage ./pedal.nix { };
         pgzero = pyfinal.callPackage ./pgzero.nix { };
         jturtle = pyfinal.callPackage ./jturtle.nix { };
-        jupyterlab-rise = pyfinal.callPackage ./jupyterlab-rise.nix { };
-        jupyterlab-mathjax3 = pyfinal.callPackage ./jupyterlab-mathjax3.nix { };
-        jupyterlab-quarto = pyfinal.callPackage ./jupyterlab-quarto.nix { };
+        #jupyterlab-rise = pyfinal.callPackage ./jupyterlab-rise.nix { };
+        #jupyterlab-mathjax3 = pyfinal.callPackage ./jupyterlab-mathjax3.nix { };
+        #jupyterlab-quarto = pyfinal.callPackage ./jupyterlab-quarto.nix { };
         itables = pyfinal.callPackage ./itables.nix { };
         #jupyterlab-language-pack-de-DE = pyfinal.callPackage ./jupyterlab-language-pack-de-DE.nix { };
       };
