@@ -53,7 +53,7 @@ stdenvNoCC.mkDerivation (finalAttrs: rec {
                 itables
                 jedi-language-server
                 jturtle
-                jupyter-book
+                #jupyter-book
                 jupyterlab
                 jupyterlab-git
                 jupyterlab-lsp
