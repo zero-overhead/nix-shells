@@ -33,7 +33,7 @@ in
       openai
       openpyxl
       pandas
-      pedal
+     # pedal
       pgzero
       pillow
       pip
