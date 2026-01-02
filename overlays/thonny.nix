@@ -34,7 +34,7 @@ in
       openpyxl
       pandas
      # pedal
-      pgzero
+     # pgzero
       pillow
       pip
       plotly
